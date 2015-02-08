@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/edit_personal_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_time_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:onClick="editPersonalData"
+        android:text="@string/epd" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/landscape_urgency_level_field"
+        android:layout_below="@+id/landscape_urgency_level_field"
+        android:layout_marginTop="27dp"
+        android:text="@string/eta" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/current_time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_name"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="@string/lvl"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/view_symptoms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_vital_sign_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:onClick="viewSymptoms"
+        android:text="@string/viewsymptoms" />
+
+    <TextView
+        android:id="@+id/time_last_seen_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_alignBottom="@+id/landscape_urgency_level_field"
+        android:layout_toRightOf="@+id/patient_name"
+        android:onClick="updateLastSeenTime"
+		android:clickable="true"
+        android:text="@string/txt" />
+
+    <TextView
+        android:id="@+id/arrivalTime_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/current_time_field"
+        android:layout_marginLeft="14dp"
+        android:text="@string/txt" />
+
+    <Button
+        android:id="@+id/find_patient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="back"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/view_vital_sign_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_personal_data_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="viewAllVitalSigns"
+        android:text="@string/vavs" />
+
+    <Button
+        android:id="@+id/perscription_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_symptoms_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="openPrescription"
+        android:text="Add Prescription" />
+
+    <TextView
+        android:id="@+id/landscape_urgency_level_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/perscription_button"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/tsbd" />
+
+    <TextView
+        android:id="@+id/urgency_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_personal_data_button"
+        android:layout_toRightOf="@+id/landscape_urgency_level_field"
+        android:paddingLeft="10dp"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

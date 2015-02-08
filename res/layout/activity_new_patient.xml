@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<Button
+        android:id="@+id/personal_data_input_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="gatherData"
+        android:text="@string/ppd" />
+
+    <Button
+        android:id="@+id/symptom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:onClick="addSymptom"
+         android:text="@string/addsymptoms" />
+
+    <EditText
+        android:id="@+id/bloodpressure_systolic_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/bps"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/heartRate_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bloodpressure_systolic_field"
+        android:layout_below="@+id/temperature_field"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="@string/hr"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/temperature_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heartRate_field"
+        android:layout_below="@+id/personal_data_input_button"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/temp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/bloodpressure_diastolic_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodpressure_systolic_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/bpd"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/add_patient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addNewPatient"
+        android:text="@string/addpatient" />
+</RelativeLayout>

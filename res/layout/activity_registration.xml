@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:onClick="registerUser"
+        android:text="@string/reg" />
+
+    <EditText
+        android:id="@+id/password_field_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_field"
+        android:layout_below="@+id/username_field"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="@string/passhint"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/username_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_field_two"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="@string/usernamehint" />
+
+    <EditText
+        android:id="@+id/password_field_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_field_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/confirmpass"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/patient_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</RelativeLayout>
